@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Question</title>
+    <link rel="stylesheet" href="question.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="client">
+            <h1>Quiz Pop</h1>
+            <h1><a href="">Create User</a></h1>
+            <h2 class="username"></h2>
+        </div>
+        <section id="sec">
+            <div class="head">
+                <h1>Take your <span> Knowledge </span>to Next level</h1>
+                <button><a href="">Start Quiz ></a></button>
+            </div>
+            <div class="image">
+                <img src="/reading book.jpg" alt="">
+            </div>
+        </section>
+        <div class="clientright">
+            <h3>username</h3>
+            <input type="text" placeholder="Enter Some Text">
+            <h2></h2>
+            <div class="clear">
+                <button>Create</button>
+                <button>Quit</button>
+            </div>
+        </div>
+    </div>
+    <div id="wrapperhead">
+        <section id="slider">
+            <div class="header">
+                <div class="">
+                    <h1>Quiz Pop</h1>
+                </div>
+                <div class="list">
+                    <a href="">Home</a>
+                    <a href="">Quite</a>
+                    <a href="">Score</a>
+                </div>
+                <div class="cess">
+                    <h2></h2>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="wrappercenter">
+                <div class="center1">
+                    <div class="wlcm">
+                        <h1>Welcome to Quiz App</h1>
+                    </div>
+                    <div class="topic">
+                        <h2>Select Topic</h2>
+                    </div>
+                </div>
+                <div class="center2">
+                    <div class="audio">
+                        <a href="">Music</a>
+                    </div>
+                    <div class="art">
+                        <a href="">Modern Art</a>
+                    </div>
+                    <div class="code">
+                        <a href="">Coding</a>
+                    </div>
+                    <div class="open">
+                        <button>Start</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+
+        let btn1 = document.querySelector('.client h1 a')
+        let btn2 = document.querySelector('.head button a')
+        let username = document.querySelector('.username')
+        let main = document.querySelector('.clientright')
+        let creat = document.querySelector('.clear button:first-of-type')
+        let quit = document.querySelector('.clear button:last-of-type')
+        let input = document.querySelector('.clientright input')
+        let blank = document.querySelector('.clientright h2')
+        let anchor = document.querySelector('.client h1 a')
+        let button = document.querySelector('.client h1:last-of-type')
+        let slide1 = document.querySelector('#wrapper')
+        let slide2 = document.querySelector('#wrapperhead')
+        let cess = document.querySelector('.cess h2')
+
+
+
+
+
+
+        btn2.onclick = (e) => {
+            e.preventDefault()
+            if (username.innerHTML === 0) {
+                alert("Please Enter Some Value")
+
+            }
+            else {
+
+            }
+        }
+
+        btn1.onclick = (e) => {
+            e.preventDefault()
+            main.style.display = 'block'
+        }
+
+        creat.onclick = () => {
+            btn1.style.display = 'none'
+            creat.style.display = 'none'
+            username.style.display = 'block'
+            alert('user Created Successful !')
+            username.innerHTML = input.value
+            button.style.display = "none"
+            main.style.display = 'none'
+        }
+
+        quit.onclick = () => {
+            main.style.display = 'none'
+        }
+
+        btn2.onclick = (e) => {
+            e.preventDefault()
+            slide1.style.display = 'none'
+            slide2.style.display = 'block'
+            cess.innerHTML = input.value
+        }
+
+
+        
+    </script>
+
+
+
+</body>
+
+</html>

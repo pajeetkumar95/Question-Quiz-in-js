@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Question</title>
-    <link rel="stylesheet" href="question.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
@@ -83,67 +83,7 @@
         </section>
     </div>
 
-    <script>
-
-        let btn1 = document.querySelector('.client h1 a')
-        let btn2 = document.querySelector('.head button a')
-        let username = document.querySelector('.username')
-        let main = document.querySelector('.clientright')
-        let creat = document.querySelector('.clear button:first-of-type')
-        let quit = document.querySelector('.clear button:last-of-type')
-        let input = document.querySelector('.clientright input')
-        let blank = document.querySelector('.clientright h2')
-        let anchor = document.querySelector('.client h1 a')
-        let button = document.querySelector('.client h1:last-of-type')
-        let slide1 = document.querySelector('#wrapper')
-        let slide2 = document.querySelector('#wrapperhead')
-        let cess = document.querySelector('.cess h2')
-
-
-
-
-
-
-        btn2.onclick = (e) => {
-            e.preventDefault()
-            if (username.innerHTML === 0) {
-                alert("Please Enter Some Value")
-
-            }
-            else {
-
-            }
-        }
-
-        btn1.onclick = (e) => {
-            e.preventDefault()
-            main.style.display = 'block'
-        }
-
-        creat.onclick = () => {
-            btn1.style.display = 'none'
-            creat.style.display = 'none'
-            username.style.display = 'block'
-            alert('user Created Successful !')
-            username.innerHTML = input.value
-            button.style.display = "none"
-            main.style.display = 'none'
-        }
-
-        quit.onclick = () => {
-            main.style.display = 'none'
-        }
-
-        btn2.onclick = (e) => {
-            e.preventDefault()
-            slide1.style.display = 'none'
-            slide2.style.display = 'block'
-            cess.innerHTML = input.value
-        }
-
-
-        
-    </script>
+    <script src="script.js"></script>
 
 
 

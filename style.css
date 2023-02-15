@@ -132,38 +132,49 @@ body{
 
 }
 
-.audio, .art, .code{
-    width: 500px;
+.center2{
     text-align: center;
-    margin: 1rem 0 0 25rem;
+    margin: 2rem 0;
+}
+
+.first, .second, .third, .fourth{
+    font-size: 20px;
     padding: 1rem;
+    margin: 1rem;
+    /* width: 200px; */
+    text-align: center;
 }
 
-.audio{
-    background-color: red;
-}
-
-.audio a, .art a, .code a{
-    text-decoration: none;
+.first{
     color: #fff;
-    font-size: 20px;
 }
 
-.art{
-    background-color: green;
-}
-
-.code{
+.first label{
     background-color: blue;
+    padding: 1rem 8rem;
 }
 
-.open button{
-    background-color: yellow;
-    border: 1px solid yellow;
-    width: 200px;
-    text-align: center;
-    margin:1rem 0 0 35rem;
-    padding: 1rem;
+.second{
+    color: #fff;
+}
+
+.second label{
+    background-color: rgb(4, 4, 12);
+    padding: 1rem 6.5rem;
+}
+
+.third{
+    color: #fff;
+}
+
+.third label{
+    background-color: rgb(237, 237, 63);
+    padding: 1rem 7.7rem;
+}
+
+.fourth button{
     font-size: 20px;
+    background-color: chartreuse;
+    padding: 1rem 5rem;
+    border: 1px solid chartreuse;
 }
-

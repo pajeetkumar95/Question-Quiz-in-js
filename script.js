@@ -18,8 +18,13 @@ let modern = document.querySelector('.center2 .art a')
 let coding = document.querySelector('.center2 .code a')
 let setbtn = document.querySelector('.open button')
 
-
-
+ function checkuser (){
+    if(sessionStorage.getItem('username')){
+        btn1.style.display = 'none'
+        username.innerHTML = sessionStorage.getItem('username')        
+    }
+ }
+    checkuser()
 
 
 btn2.onclick = (e) => {
@@ -29,9 +34,13 @@ btn2.onclick = (e) => {
 
     }
     else {
+        sessionStorage.setItem("username",input.value)
+        let save = sessionStorage.getItem("username")
+        username.innerHTML = save
         slide1.style.display = 'none'
         slide2.style.display = 'block'
         cess.innerHTML = input.value
+        checkuser()
     }
 }
 
@@ -50,10 +59,5 @@ creat.onclick = () => {
     main.style.display = 'none'
 }
 
-quit.onclick = () => {
-    main.style.display = 'none'
-}
 
-music.onclick = function (e) {
-    e.preventDefault()
-}
+

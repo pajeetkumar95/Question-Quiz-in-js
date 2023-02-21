@@ -1,63 +1,347 @@
-let btn1 = document.querySelector('.client h1 a')
-let btn2 = document.querySelector('.head button a')
-let username = document.querySelector('.username')
-let main = document.querySelector('.clientright')
-let creat = document.querySelector('.clear button:first-of-type')
-let quit = document.querySelector('.clear button:last-of-type')
-let input = document.querySelector('.clientright input')
-let blank = document.querySelector('.clientright h2')
-let anchor = document.querySelector('.client h1 a')
-let button = document.querySelector('.client h1:last-of-type')
+let creatuser = document.querySelector('.top h3')
+let startbtn = document.querySelector('.take a')
+let startinput = document.querySelector('.input')
+let input = document.querySelector('.creatuser')
+let creatbtn = document.querySelector('.input button:first-of-type')
+let quitbtn = document.querySelector('.input button:last-of-type')
+let user = document.querySelector('.top h2')
 let slide1 = document.querySelector('#wrapper')
-let slide2 = document.querySelector('#wrapperhead')
-let cess = document.querySelector('.cess h2')
+let slide2 = document.querySelector('#slide')
+let user2 = document.querySelector('.slideright h2')
 
 
-let music = document.querySelector('.center2 .audio a')
-let modern = document.querySelector('.center2 .art a')
-let coding = document.querySelector('.center2 .code a')
-let setbtn = document.querySelector('.open button')
-
- function checkuser (){
-    if(sessionStorage.getItem('username')){
-        btn1.style.display = 'none'
-        username.innerHTML = sessionStorage.getItem('username')        
+function checkuser (){
+    if(sessionStorage.getItem('quizname')){
+        user.innerHTML = sessionStorage.getItem('quizname')
+        creatuser.style.display  = 'none'
+        user2.innerHTML = sessionStorage.getItem('quizname')
     }
- }
-    checkuser()
+}
+checkuser()
 
+creatuser.onclick = () => {
+    startinput.style.display = 'flex'
+}
 
-btn2.onclick = (e) => {
+creatbtn.onclick = () => {
+    sessionStorage.setItem('quizname',input.value)
+    user.innerHTML = sessionStorage.getItem('quizname')
+    creatuser.style.display = 'none'
+    startinput.style.display = 'none'
+    alert('User Name successful')
+}
+
+startbtn.onclick = (e) => {
     e.preventDefault()
-    if (username.innerHTML == '') {
-        alert("Please Enter Some Value")
-
+    if (user.innerHTML.length === 0) {
+        alert('creatuser')
     }
     else {
-        sessionStorage.setItem("username",input.value)
-        let save = sessionStorage.getItem("username")
-        username.innerHTML = save
         slide1.style.display = 'none'
-        slide2.style.display = 'block'
-        cess.innerHTML = input.value
-        checkuser()
+        slide2.style.display = 'block'        
+        user2.innerHTML = sessionStorage.getItem("quizname")
     }
 }
 
-btn1.onclick = (e) => {
-    e.preventDefault()
-    main.style.display = 'block'
+
+// page 2 work
+
+
+let start3 = document.querySelector('.startrace button')
+
+start3.onclick = () => {
+    const selectoption = document.querySelector('input[name="option"]:checked').value
+    if (selectoption === 'music') {
+        sessionStorage.setItem('quizname', 'music')
+    }
+    else if (selectoption === 'modernart') {
+        sessionStorage.setItem('quizname', 'modernart')
+
+    }
+    else if (selectoption === 'coding') {
+        sessionStorage.setItem('quizname', 'coding')
+    }
+
 }
 
-creat.onclick = () => {
-    btn1.style.display = 'none'
-    creat.style.display = 'none'
-    username.style.display = 'block'
-    alert('user Created Successful !')
-    username.innerHTML = input.value
-    button.style.display = "none"
-    main.style.display = 'none'
-}
 
 
+
+
+let Arr1 = [
+    {
+        question1: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question2: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question3: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question4: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question5: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question6: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question7: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question8: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question9: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question10: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+]
+
+let Arr2 = [
+    {
+        question1: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question2: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question3: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question4: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question5: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question6: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question7: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question8: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question9: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question10: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+]
+
+let Arr3 = [
+
+    {
+        question1: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question2: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question3: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question4: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question5: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question6: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question7: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question8: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question9: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    },
+
+    {
+        question10: "Q1:Which of the following is not a looping structure in PHP?",
+        a: "for",
+        b: "for each",
+        c: "while",
+        d: "do-while",
+        ans: "ans2"
+    }
+]
 

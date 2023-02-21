@@ -5,91 +5,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Question</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Question Quiz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="wrapper">
-        <div class="client">
-            <h1>Quiz Pop</h1>
-            <h1><a href="">Create User</a></h1>
-            <h2 class="username"></h2>
-        </div>
-        <section id="sec">
+        <div class="header">
             <div class="head">
-                <h1>Take your <span> Knowledge </span>to Next level</h1>
-                <button><a href="">Start Quiz ></a></button>
+                <h3>Quiz Pop</h3>
             </div>
-            <div class="image">
-                <img src="/reading book.jpg" alt="">
+            <div class="top">
+                <h3>Creat User</h3>
+                <h2></h2>
+            </div>
+        </div>
+        <section>
+            <div class="center">
+                <div class="take">
+                    <h1>Take Your <span> Knowledge</span> to Next Level</h1>
+                    <a href="">Start Quiz</a>
+                </div>
+                <div class="read">
+                    <img src="/reading book.jpg" alt="">
+                </div>
+                <div class="input">
+                    <input class="creatuser" type="text" placeholder="Enter Your Name">
+                    <button>Creat</button>
+                    <button>Quit</button>
+                </div>
             </div>
         </section>
-        <div class="clientright">
-            <h3>username</h3>
-            <input type="text" placeholder="Enter Some Text">
-            <h2></h2>
-            <div class="clear">
-                <button>Create</button>
-                <button>Quit</button>
+    </div>
+    <div id="slid   e">
+        <header class="slidehead">
+            <div class="slideleft">
+                <h3>Quiz Pop</h3>
+            </div>
+            <div class="slidecenter">
+                <a href="">Home</a>
+                <a href="">Quiz</a>
+                <a href="">Score</a>
+            </div>
+            <div class="slideright">
+                <h2></h2>
+            </div>
+        </header>
+        <section>
+            <div class="sectionset">
+                <div class="welcome">
+                    <h3>Welcome to Quiz App</h3>
+                    <h4>Select Topic</h4>
+                </div>
+                <div class="quizstart">
+                    <input id="music" type="radio" name="option" value="music">Music <br>
+                    <input id="modernart" type="radio" name="option" value="modernart">Modern Art <br>
+                    <input id="coding" type="radio" name="option" value="coding">Coding <br>
+                </div>
+                <div class="startrace">
+                    <button>Start</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="page3">
+        <div class="question">
+            <h4></h4>
+            <input type="radio" name="ques" id="option1">
+            <label for="ans1" id="option1"></label>
+
+            <input type="radio" name="ques" id="option2">
+            <label for="ans2" id="option2"></label>
+
+            <input type="radio" name="ques" id="option3">
+            <label for="ans3" id="option3"></label>
+
+            <input type="radio" name="ques" id="option4">
+            <label for="ans4" id="option4"></label>
+            <div class="">
+                <button>Submit</button>
             </div>
         </div>
     </div>
-    <div id="wrapperhead">
-        <section id="slider">
-            <div class="header">
-                <div class="">
-                    <h1>Quiz Pop</h1>
-                </div>
-                <div class="list">
-                    <a href="">Home</a>
-                    <a href="">Quite</a>
-                    <a href="">Score</a>
-                </div>
-                <div class="cess">
-                    <h2></h2>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div id="wrappercenter">
-                <div class="center1">
-                    <div class="wlcm">
-                        <h1>Welcome to Quiz App</h1>
-                    </div>
-                    <div class="topic">
-                        <h2>Select Topic</h2>
-                    </div>
-                </div>
-                <div class="center2">
-                    <div class="first">
-                        <label for="">Music</label>
-                        <input type="radio" name="option" id="">
-                    </div>
-                    <div class="second">
-                        <label for="">Modern Art</label>
-                        <input type="radio" name="option" id="">
-                    </div>
-                    <div class="third">
-                        <label for="">Coding</label>
-                        <input type="radio" name="option" id="">
-                    </div>
-                    <div class="fourth">
-                        <button>Start</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <script src="script.js"></script>
 
 
+    <script src="script.js">
 
+    </script>
 </body>
 
 </html>

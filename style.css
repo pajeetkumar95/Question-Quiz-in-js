@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,175 +6,111 @@
 
 }
 
-body{
-    background-color: crimson;
-}   
+body {
+    background-color: aqua;
+}
 
-#wrapper{
+#wrapper {
+    height: 100vh;
+}
+
+.top {
+    border:1px solid;
+    padding: 0.25rem;
+    border-radius: 20px;
+    background-color: palevioletred;
+}
+
+.header {
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: aliceblue;
+}
+
+.center {
+    height: 80%;
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.read img {
+    width: 60%;
+    margin-left: 5rem;
+    border-radius: 20px;
+}
+
+.take {
+    width: 50%;
+
+}
+
+.take span{
+    color: red;
+}
+
+.take a{
+    text-decoration: none;
+    border: 1px solid;
+    color: #000;
+    border-radius: 20px;
+    padding: 0.25rem;
+    background-color: crimson;
+}
+
+.take h1{
+    padding-bottom: 2rem;
+}
+
+.read {
+    width: 60%;
     position: relative;
 }
 
-.client{
-    display: flex;
-    justify-content: space-around;
-    margin: 1.5rem 0;
-    background-color: #fff;
-    padding: 1rem 0;
-}
-.client h1 a{
-    text-decoration: none;
-    color: pink;
-}
-
- .client h1:last-of-type{
-    border: 1px solid;
-    border-radius: 10px;
-    padding: 0.5rem ;
-    background-color: #000;
-    color: #fff;   
- }
- #sec{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    margin: 5rem auto;
- }
-
-.head{
-    width: 90%;
-    margin: 0 0.5rem;
-}
-.head h1{
-    font-size: 50px;
-}
-
-.head button{
-    margin-top: 1.5rem;
-    background-color: #000;
-    width: 30%;
-    border-radius: 20px;
-    font-size: 25px;
-}
-.head h1 span{
-    color: aqua;
-}
-
-.head a{
-    text-decoration: none;
-    color: pink;
-}
-
-.image img{
-    height: 300px;
-    text-align: center;
-    margin-top: 5rem;
-    border-radius: 20px;
- }
-
- .clientright{
+.input {
     position: absolute;
     top: 5rem;
-    left: 15rem;
-    border: 1px solid;
-    width: 500px;
-    height: 200px;
-    background-color: #fff;
+    right: 13.5rem;
     display: none;
- }
+}
 
- .clientright h3,input, .clear{
-    padding: 1rem;
- }
+#slide {
+    height: 100vh;
+    background-color: brown;
+    display: none;
+}
 
- .clientright input{
-    width: 400px;
- }
- .clear button{
-    font-size: 25px;
- }
-
- .header{
+.slidehead {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: aqua;
-    padding: 2rem;
- }
+    background-color: aliceblue;
+}
 
- .header .list a{
-    text-decoration:none ;
+.slidecenter a {
+    text-decoration: none;
+    padding-left: 1rem;
     color: #000;
-    padding: 0 2rem;
-    font-size: 20px;
- }
+}
 
-#wrapperhead{
+.sectionset {
+    width: 40%;
+    margin: 1rem auto;
+}
+
+.welcome h3 {
+    padding: 1rem 0;
+}
+
+.welcome h4 {
+    padding: 0.25rem 0;
+}
+
+#page3 {
     display: none;
-}
-
-#wrappercenter{
-    background-color: darksalmon;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.center1{
-    text-align: center;
-}
-
-.wlcm{
-    padding-top: 5rem;
-}
-.topic{
-    padding-top: 2rem;
-
-}
-
-.center2{
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.first, .second, .third, .fourth{
-    font-size: 20px;
-    padding: 1rem;
-    margin: 1rem;
-    /* width: 200px; */
-    text-align: center;
-}
-
-.first{
-    color: #fff;
-}
-
-.first label{
-    background-color: blue;
-    padding: 1rem 8rem;
-}
-
-.second{
-    color: #fff;
-}
-
-.second label{
-    background-color: rgb(4, 4, 12);
-    padding: 1rem 6.5rem;
-}
-
-.third{
-    color: #fff;
-}
-
-.third label{
-    background-color: rgb(237, 237, 63);
-    padding: 1rem 7.7rem;
-}
-
-.fourth button{
-    font-size: 20px;
-    background-color: chartreuse;
-    padding: 1rem 5rem;
-    border: 1px solid chartreuse;
 }

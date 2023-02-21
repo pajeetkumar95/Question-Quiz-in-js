@@ -17,6 +17,7 @@ function checkuser (){
         user2.innerHTML = sessionStorage.getItem('quizname')
     }
 }
+
 checkuser()
 
 creatuser.onclick = () => {
@@ -29,6 +30,7 @@ creatbtn.onclick = () => {
     creatuser.style.display = 'none'
     startinput.style.display = 'none'
     alert('User Name successful')
+    checkuser()
 }
 
 startbtn.onclick = (e) => {
@@ -52,17 +54,18 @@ let start3 = document.querySelector('.startrace button')
 start3.onclick = () => {
     const selectoption = document.querySelector('input[name="option"]:checked').value
     if (selectoption === 'music') {
-        sessionStorage.setItem('quizname', 'music')
+        sessionStorage.setItem('quizstart', 'music')
     }
     else if (selectoption === 'modernart') {
-        sessionStorage.setItem('quizname', 'modernart')
+        sessionStorage.setItem('quizstart', 'modernart')
 
     }
     else if (selectoption === 'coding') {
-        sessionStorage.setItem('quizname', 'coding')
+        sessionStorage.setItem('quizstart', 'coding')
     }
 
 }
+
 
 
 

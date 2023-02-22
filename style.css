@@ -18,7 +18,7 @@ body {
     border:1px solid;
     padding: 0.25rem;
     border-radius: 20px;
-    background-color: palevioletred;
+    background-color: #fff;
 }
 
 .header {
@@ -62,7 +62,7 @@ body {
     color: #000;
     border-radius: 20px;
     padding: 0.25rem;
-    background-color: crimson;
+    background-color: #fff;
 }
 
 .take h1{
@@ -83,7 +83,7 @@ body {
 
 #slide {
     height: 100vh;
-    background-color: brown;
+    background-color: yellow;
     display: none;
 }
 
@@ -92,12 +92,14 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: aliceblue;
+    padding: 2rem 0;
 }
 
 .slidecenter a {
     text-decoration: none;
     padding-left: 1rem;
     color: #000;
+    font-size: 25px;
 }
 
 .sectionset {
@@ -107,12 +109,58 @@ body {
 
 .welcome h3 {
     padding: 1rem 0;
+    font-size: 40px;
 }
 
 .welcome h4 {
     padding: 0.25rem 0;
+    font-size: 30px;
 }
 
-#page3 {
+.quizstart{
+    margin: 1.5rem 0  1rem 0;
+    font-size: 30px;
+}
+
+.startrace button{
+    font-size: 30px;
+    padding: 0.25rem 1.5rem;
+}
+
+#page3{
+    height: 100vh;
+    background-color: rgb(174, 5, 61);
     display: none;
+    position: relative;
+}
+
+.main{
+    text-align: center;
+    padding: 4rem;
+    color: #fff;
+}
+
+.question{
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+    background-color: #fff;
+    width: 60%;
+    height: 60%;
+    padding: 2.5rem;
+}
+
+.question input{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    font-size: 15px;
+    font-weight: 900px;
+}
+
+.question button{
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: 400px;
 }
